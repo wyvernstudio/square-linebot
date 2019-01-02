@@ -17,14 +17,14 @@ line.log("Auth Token : " + str(line.authToken))
 squareChatMid='(YOUR_SQUARE_MID)' 
 #line.getJoinableSquareChats('YOUR_SQUARE_MID') #Get Mid from square chat
 
-helpMessage = "?ÄÄÄ? Yepz ?" + "\n" + \
-                    "?ME" + "\n" + \
-                    "?CREATOR" + "\n" + \
-                    "?MYMID" + "\n" + \
-                    "?ÄÄÄÄÄÄÄÄÄÄÄÄ" + "\n" + \
-                    "?HELP [ªèÇÂàËÅ×Í]" + "\n" + \
-                    "?SPEED [¤ÇÒÁàÃçÇºÍ·]" + "\n" + \
-                    "?ÄÄÄÄÄÄÄÄÄÄÄÄ"
+helpMessage = "â•­â”€â”€â”€ã€Œ Helps ã€" + "\n" + \
+                    "â”œME" + "\n" + \
+                    "â”œCREATOR" + "\n" + \
+                    "â”œMYMID" + "\n" + \
+                    "â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€" + "\n" + \
+                    "â”œHELP [à¸Šà¹ˆà¸§à¸¢à¹€à¸«à¸¥à¸·à¸­]" + "\n" + \
+                    "â”œSPEED [à¸„à¸§à¸²à¸¡à¹€à¸£à¹‡à¸§à¸šà¸­à¸—]" + "\n" + \
+                    "â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€"
 
 # Initialize OEPoll with LINE instance
 oepoll = OEPoll(line)
@@ -82,9 +82,9 @@ while True:
                         squareMemberMid=payload.squareChatMid
                         squareMemberMid=payload.squareMemberMid
                         squareMember=payload.squareMember
-                        line.sendSquareMessage(squareChatMid, '¢ÍãËé¨Ò¡ä»ÍÂèÒ§Ê§º¹Ğà¨éÒ¤Ğ')
+                        line.sendSquareMessage(squareChatMid, 'à¸‚à¸­à¹ƒà¸«à¹‰à¸ˆà¸²à¸à¹„à¸›à¸­à¸¢à¹ˆà¸²à¸‡à¸ªà¸‡à¸šà¸™à¸°à¹€à¸ˆà¹‰à¸²à¸„à¸°')
                     else:
                         pass
             
     except Exception as e:
-        line.log("[FETCH_SQUARE] äÁèÊÒÁÒÃ¶´Ö§¢éÍÁÙÅáª·ä´é: " + str(e))
+        line.log("[FETCH_SQUARE] à¹„à¸¡à¹ˆà¸ªà¸²à¸¡à¸²à¸£à¸–à¸”à¸¶à¸‡à¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¹à¸Šà¸—à¹„à¸”à¹‰: " + str(e))
